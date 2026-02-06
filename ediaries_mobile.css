@@ -1,0 +1,425 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+
+ scrollbar-color: transparent transparent;
+  scrollbar-width: 0px;
+}
+ 
+html {
+height: 100vh;
+width: 100vw;
+cursor: url('./ediaries.cur'), auto;
+background-color: oldlace;
+overflow-x: hidden;
+}
+
+body {
+height: 299vh;
+width: 99%;
+margin: 5px auto;
+background-color: oldlace;
+background-image: radial-gradient(circle, oldlace 1%, pink 30%, cornsilk 40%, aliceblue 45%, oldlace 75%);
+background-size: contain;
+box-shadow: 3.3px 3.3px #a10606;
+font-family: 'Zalando Sans Expanded';
+cursor: url('./ediaries.cur'), auto;
+overflow-x: hidden;
+
+}
+
+
+/*
+--------------------------------------------Fonts----------------------------------------------
+*/
+
+
+@font-face {
+    font-family: "Homemade Apple";
+    src: url('Homemade_Apple/HomemadeApple-Regular.ttf') format("truetype");
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+  font-family: "Zalando Sans Expanded";
+  src: url('Zalando_Sans_Expanded/ZalandoSansExpanded-VariableFont_wght.ttf') format("truetype");
+}
+
+
+
+/*
+--------------------------------------------Fonts----------------------------------------------
+*/
+
+a {
+
+color: #A10606;
+text-decoration: none;
+}
+
+
+.scroll {
+display: block;
+font-family: "Homemade Apple";
+color: #A10606;
+font-size: 22px;
+text-align: center;
+}
+
+.mobile_about_screen {
+position: absolute;
+top: 210vh;
+display: block;
+width: 99%;
+margin: auto;
+font-size: 44px;
+color: #af0000;
+text-align: center;
+z-index: 7;
+font-family: "Homemade Apple";
+}
+
+.mobile_about_text {
+padding: 3%;
+width: 90%;
+margin: auto;
+height: 60vh;
+border: 1px dashed #A10606;
+box-shadow: 2px 2px 5px gray;
+background-color: aliceblue;
+overflow: scroll;
+z-index: 7;
+font-size: 20px;
+font-family: courier new;
+font-style: italic;
+}
+
+
+.podmobile {
+display: inline-block;
+position: absolute;
+top: 276vh;
+left: 9.5vw;
+padding: 1%;
+text-align: center;
+width: 10em;
+height: 5em;
+border: 3px outset linen;
+background-color: linen;
+box-shadow: 2px 2px 5px gray;
+overflow: scroll;
+z-index: 8;
+font-size: 14px;
+color: cadetblue;
+outline: 0.5px solid black;
+transform: rotate(0deg);
+background-image: radial-gradient(linen, white, gainsboro);
+border-radius: 1%;
+}
+
+.podmobile:hover {
+
+border: 3px inset linen;
+}
+
+.substackmobile {
+display: inline-block;
+position: absolute;
+top: 276vh;
+right: 9.5vw;
+color: cadetblue;
+padding: 1%;
+width: 10em;
+height: 5em;
+border: 3px outset linen;
+background-color: linen;
+box-shadow: 2px 2px 5px gray;
+font-size: 14px;
+z-index: 7;
+text-align: center;
+outline: 0.5px solid black;
+transform: rotate(0deg);
+background-image: radial-gradient(linen, white, gainsboro);
+border-radius: 1%;
+}
+
+.substackmobile:hover {
+
+border: 3px inset linen;
+}
+
+.credit {
+display: block;
+position: absolute;
+bottom: -207.5vh;
+z-index: 5;
+background-color: oldlace;
+color: #af0000;
+}
+
+
+.playgames {
+display: block;
+position: absolute;
+padding: 2%;
+border-radius: 20px;
+bottom: 43vh;
+right: 3vw;
+width: 52vw;
+z-index: 5;
+background-color: transparent;
+color: #af0000;
+text-align: left;
+border: 2px dashed #af0000;
+font-family: courier new;
+text-align: justify;
+font-weight: bold;
+scroll-behaviour: smooth;
+}
+
+
+.landscape_notice {
+
+display: none;
+opacity: 0%;
+}
+
+
+.centralimage {
+width: 100%;
+
+}
+
+
+.eportrait {
+
+
+width: 189px;
+height: 300px;
+margin: auto;
+
+
+}
+
+.eone {
+position: absolute;
+top: 29vh;
+left: 8%;
+z-index: 1;
+box-shadow: 2px 2px 4px gray;
+height: 123px;
+width: 78px;
+}
+
+
+
+.etwo {
+position: absolute;
+top: 27.5vh;
+left: 7%;
+z-index: 1;
+transform: rotate(8deg);
+height: 140px; 
+width: 87px;
+}
+
+
+.title {
+position: static;
+width: 333px;
+margin: auto;
+font-weight: lighter;
+text-shadow: 0px 0px 48px purple;
+box-shadow: 0px 0px 111px hotpink;
+background-color: transparent;
+backdrop-filter: blur(60px);
+border: 5px double #a10606;
+z-index: 4;
+transform: rotate(0deg);
+
+}
+
+
+.navigation {
+position: fixed;
+top: 1vh;
+left: 3vh;
+font-family: "Homemade Apple";
+text-underline-offset: 4px;
+display: none;
+}
+
+.nav {
+color: #A10606;
+font-size: 15.5px;
+font-weight: bold;
+margin-right: 33px;
+text-decoration: underline;
+text-decoration-thickness: 2px;
+text-decoration-style: dashed;
+}
+
+
+.nav:hover {
+
+text-decoration-style: double;
+
+}
+
+
+.candle {
+position: absolute;
+right: 8.5%;
+top: 18.5%;
+z-index: 3;
+
+transform: scale(1);
+
+    transition-property: transform;
+
+    transition-duration: 400ms;
+
+    &:hover {
+
+        transform: scale(1.15);
+}
+
+}
+
+
+
+.redheart {
+display: block;
+right: 44%;
+}
+
+
+.confessions {
+position: absolute;
+top: 62.5vh;
+left: 9vw;
+font-size: 1.1rem;
+width: 300px;
+height: 120px;
+border: 2px dotted #a10606;
+box-shadow: none;
+padding: 1.5%;
+color: #A10606;
+background-color: rgba(240, 248, 255, 0.4);
+backdrop-filter: blur(50px);
+line-height: 110%;
+text-align: justify;
+font-weight: 200;
+text-shadow: 1px 1px #A10606;
+border-radius: 0%;
+}
+
+
+.confess {
+
+background-color: transparent;
+border: 1px solid #A10606;
+border-radius: 50%;
+color: #A10606;
+padding: 3px;
+font-weight: bold;
+text-shadow: none;
+font-family: "Homemade Apple";
+}
+
+.confess:hover {
+border: 2px solid cornsilk;
+}
+
+
+.reviews_screen {
+text-align: center;
+position: absolute;
+margin: auto;
+top: 108vh;
+left: 0.3vw;
+height: 530px;
+width: 99vw;
+border: none;
+background-color: transparent;
+box-shadow: none;
+filter: grayscale(100%);
+}
+
+
+.reviews_title {
+position: static;
+text-align: center;
+top: -17%;
+z-index: 5;
+background-color: transparent;
+text-align: center;
+color: rgb(251, 250, 227);
+-webkit-text-stroke: 1px maroon;
+box-shadow: none;
+font-weight: bold;
+font-size: 29px;
+transform: rotate(0deg);
+text-shadow: 1px 1px black;
+border: none;
+width: 99%;
+
+line-height: 1.5;
+}
+
+
+
+.insta {
+background-color: aliceblue;
+position: absolute;
+text-align: center;
+bottom: 6.5%;
+right: 9%;
+color: #a10606;
+font-style: italic;
+padding: 3px;
+font-family: serif;
+font-weight: bold;
+letter-spacing: 2px;
+font-size: 16px;
+z-index: 5;
+outline: 0.5px solid black;
+box-shadow: none;
+border: 3px outset aliceblue;
+}
+
+.insta:hover {
+border: 2px inset brown;
+
+
+}
+
+.banner {
+position: fixed;
+left: 0%;
+bottom: 0%;
+color: #a10606;
+font-weight: 200;
+font-size: 44px;
+margin-bottom: 1px;
+display: none;
+}
+
+
+
+
+
+
+/*
+Colors: 
+burgundy: #a10606
+red: #af0000
+cream: #e4debc
+wine: rgb(75, 37, 53);
+cream paper: rgb(251, 250, 227);
+cool pink paper: rgb(252, 237, 237);
+*/

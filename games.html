@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>ediaries</title>
+
+<link rel="stylesheet" href="./games_burgundy.css">
+
+<link rel="icon" type="image/x-icon" href="./assets-ediaries/favicon.ico">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" media="screen and (max-width: 1024px) and (orientation: portrait)" href="./games_mobile.css">
+
+<link rel="stylesheet" media="screen and (max-width: 1024px) and (orientation: landscape)" href="./ediaries_mobile_landscape.css">
+
+<body>
+
+<div class = "landscape_notice">Turn your device around - this website is best viewed in portrait &#x263A;</div>
+
+<div class = "gamename">
+<span>Are you the red flag people should run away from?</span></div>
+
+
+<div class="carousel">
+
+<div class = "card" id = "item0">
+
+<img src = "./assets-ediaries/cardgame_q0.png">
+</div>
+
+<div class = "card" id = "item1">
+
+<img src = "./assets-ediaries/cardgame_q1.png">
+</div>
+
+<div class = "card" id = "item2">
+
+<img src = "./assets-ediaries/cardgame_q2.png">
+
+</div>
+
+<div class = "card" id = "item3">
+
+<img src = "./assets-ediaries/cardgame_q3.png">
+
+</div>
+
+<div class = "card" id = "item4">
+
+<img src = "./assets-ediaries/cardgame_q4.png">
+
+</div>
+
+<div class = "card" id = "item5">
+
+<img src = "./assets-ediaries/cardgame_q5.png">
+
+</div>
+
+<div class = "card" id = "item6">
+
+<img src = "./assets-ediaries/cardgame_q6.png">
+
+</div>
+
+<div class = "card" id = "item7">
+
+<img src = "./assets-ediaries/cardgame_q7.png">
+
+</div>
+
+<div class = "card" id = "item8">
+
+<img src = "./assets-ediaries/cardgame_q8.png">
+
+</div>
+
+<div class = "card" id = "item9">
+
+<img src = "./assets-ediaries/cardgame_q9.png">
+
+</div>
+
+<div class = "card" id = "item10">
+
+<img src = "./assets-ediaries/cardgame_q10.png">
+
+</div>
+
+</div>
+
+
+<div class = "links">
+<a href = "#item0" class = "card_button">0</a>
+<a href = "#item1" class = "card_button">1</a>
+<a href = "#item2" class = "card_button">2</a>
+<a href = "#item3" class = "card_button">3</a>
+<a href = "#item4" class = "card_button">4</a>
+<a href = "#item5" class = "card_button">5</a>
+<a href = "#item6" class = "card_button">6</a>
+<a href = "#item7" class = "card_button">7</a>
+<a href = "#item8" class = "card_button">8</a>
+<a href = "#item9" class = "card_button">9</a>
+<a href = "#item10" class = "card_button">10</a>
+</div>
+
+
+<div class = "generator">
+Your number is:
+<div id = "number"></div>
+<br>
+<button onclick="noGenerator()" class = "button">Click for number!</button> 
+</div>
+
+
+<div class = "instructions">
+<b>How to play:</b>
+<br><br>
+&#x2022; This game can be played either individually or with a group. Use the random number generator in the bottom left corner to generate a number between 0 and 10.
+<br>
+&#x2022; If you get 0, skip a turn. If not, click the corresponding number on the number menu under the cards & answer the question honestly.
+<br>
+&#x2022; Each answer corresponds to a particular score. Keep a tally of your score according to the list below (scroll down).
+<br>
+&#x2022; After 3 rounds (or after each player has answered 3 questions), the player with the highest score is the 'red flag.'
+<br>&#x2665;<br>
+<br><br>
+<br><br>
+<table>
+<th>Question</th>
+<th>Scores</th>
+
+<tr>
+<td> 1</td>
+<td> Beef 2, Chicken 1, Mixed 0</td>
+</tr>
+
+<tr>
+<td> 2</td>
+<td>Nothing 2, Indomie 1, everything else  0</td>
+</tr>
+
+<tr>
+<td> 3</td>
+<td>Nothing 2, Sleep 1, everything else 0</td>
+</tr>
+
+<tr>
+<td> 4</td>
+<td>Youtube Music 2, Apple Music 1, everything else 0</td>
+</tr>
+
+<tr>
+<td> 5</td>
+<td>0 songs 2, 1-4 songs 1, 5 songs 0</td>
+</tr>
+
+<tr>
+<td> 6</td>
+<td>Fail to complete 1, Complete 0</td>
+</tr>
+
+<tr>
+<td> 7</td>
+<td>Oil 0, Everything else 1</td>
+</tr>
+
+<tr>
+<td> 8</td>
+<td>No points - discussion question!</td>
+</tr>
+
+<tr>
+<td> 9</td>
+<td>Yes 2, Sometimes 2, Never 0</td>
+</tr>
+
+<tr>
+<td> 10</td>
+<td>Side of raw onion 1, everything else 0</td>
+</tr>
+ 
+</table>
+
+
+</div>
+
+<a href = "index.html"class = "back"> &#x2190; back to the homepage</a>
+
+<script>
+
+function noGenerator() {
+
+document.getElementById("number").innerHTML =
+Math.floor(Math.random() * 10);
+
+}
+
+</script>
+
+</body>
+</html>

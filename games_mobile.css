@@ -1,0 +1,246 @@
+j* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+
+ scrollbar-color: transparent transparent; /* thumb and track color */
+  scrollbar-width: 0px;
+}
+
+html {
+height: 100%;
+width: 100%;
+cursor: url('./ediaries.cur'), auto;
+background-color: aliceblue;
+}
+
+body {
+
+height: 205vh;
+margin: 5px auto;
+width: 99vw;
+border: none;
+box-shadow: none;
+background-size: contain;
+background-color: pink;
+background-image: radial-gradient(oldlace 1%, pink 30%, cornsilk 40%, oldlace 50%, aliceblue 70%);
+color: #af0000;
+font-family: "Zalando Sans Expanded";
+overflow-x: hidden;
+overflow-y: scroll;
+cursor: url('./ediaries.cur'), auto;
+}
+
+/*
+--------------------------------------------Fonts----------------------------------------------
+*/
+
+
+@font-face {
+    font-family: "Homemade Apple";
+    src: url('./Homemade_Apple/HomemadeApple-Regular.ttf') format("truetype");
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+  font-family: "Zalando Sans Expanded";
+  src: url('./Zalando_Sans_Expanded/ZalandoSansExpanded-VariableFont_wght.ttf') format("truetype");
+}
+
+
+
+/*
+--------------------------------------------Fonts----------------------------------------------
+*/
+
+
+a {
+z-index: 5;
+text-decoration: none;
+
+}
+
+img {
+
+width: 400px;
+height: 252px;
+
+
+}
+
+table {
+font-size: 12px;
+border-collapse: collapse;
+
+
+}
+
+td {
+border: 1px solid #af0000;
+
+}
+
+.gamename {
+box-shadow: 3.5px 3.5px maroon;
+font-family: "Zalando Sans Expanded", sans-serif;
+background-color: pink;
+font-size: 33px;
+text-align: center;
+padding: 1%;
+font-weight: bold;
+color: #af0000;
+width: 80vw;
+margin: 4vh 11vw auto;
+border: 3.5px solid #a10606;
+font-style: italic;
+}
+
+.carousel {
+margin: 5vh auto;
+top: 22vh;
+max-height: 300px;
+width: 400px;
+overflow-x: scroll;
+overflow-y: hidden;
+white-space: nowrap;
+scroll-behavior: smooth;
+}
+
+
+.slide {
+
+float: left;
+
+}
+
+
+.card {
+
+height: 252px;
+width: 400px;
+display: inline;
+
+}
+
+.links {
+width: 98vw;
+text-align: center;
+position: absolute;
+margin-top: 3vh;
+left: 1vh;
+}
+
+
+
+.card_button {
+color: black;
+padding: 2.5%;
+background-color: rgb(251, 250, 227);
+border: 0.5px solid #af0000;
+border-radius: 33%;
+outline: 0.5px solid gray;
+color: #af0000;
+font-size: 0.8em;
+line-height: 1.5;
+}
+
+.card_button:active {
+border: 2px silver;
+
+
+}
+
+.instructions {
+color: #a10606;
+position: absolute;
+background-color: pink;
+width: 350px;
+height: 450px;
+left: 3%; 
+top: 100vh;
+box-shadow: 3px 3px #a10606;
+border: 1px solid #a10606;
+padding: 1%;
+overflow: scroll;
+transform: rotate(0deg);
+}
+
+.generator {
+position: absolute;
+top: 170vh;
+right: 2vh;
+padding: 2%;
+width: 300px;
+height: 200px;
+font-family: "Homemade Apple", cursive;
+font-size: 22px;
+box-shadow: 2.5px 2.5px black;
+color: dimgray;
+background-color: rgb(251, 250, 227);
+}
+
+#number {
+font-family: "Zalando Sans Expanded", sans-serif;
+width: 50px;
+height: 50px;
+color: dimgray;
+padding: 1%;
+font-size: 33px;
+text-align: center;
+border: 3px double dimgray;
+}
+
+.button {
+position: absolute;
+bottom: 10%;
+background-color: transparent;
+color: dimgray;
+border-color: dimgray;
+}
+
+.back {
+position: absolute;
+top: 200vh;
+left: 3%;
+padding: 1%;
+color: dimgray;
+background-image: linear-gradient(gainsboro, white, gainsboro);
+outline: 0.5px solid dimgray;
+border: 3px outset gainsboro;
+font-size: 19px;
+transform: rotate(0deg);
+font-family: courier new;
+font-weight: lighter;
+}
+
+.back:active {
+border: 3px inset lavenderblush;
+
+}
+
+
+/*
+
+
+wine: 
+background-color: rgb(75, 37, 53);
+
+
+cream paper: 
+background-color: rgb(251, 250, 227);
+
+cool pink paper:
+rgb(252, 237, 237);
+
+brown ridge: 
+rgb(75, 30, 33)
+
+
+cornsilk leaflet 
+#FFFDDE
+
+
+*/

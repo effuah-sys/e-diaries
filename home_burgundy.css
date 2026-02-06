@@ -1,0 +1,578 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+
+ scrollbar-color: transparent transparent;
+  scrollbar-width: 0px;
+}
+ 
+html {
+height: 100%;
+width: 100%;
+cursor: url('./ediaries.cur'), auto;
+background-color: aliceblue;
+}
+
+body {
+height: 91vh;
+width: 98vw;
+margin: 5px auto;
+background-size: cover;
+background-repeat: repeat;
+background-color: lavenderblush;
+border: 1.5px solid #a10606;
+box-shadow: 3.3px 3.3px #a10606;
+color: black;
+font-family: "Zalando Sans Expanded", sans-serif;
+cursor: url('./ediaries.cur'), auto;
+overflow: hidden;
+}
+
+/*
+--------------------------------------------Fonts----------------------------------------------
+*/
+
+
+@font-face {
+    font-family: "Homemade Apple", cursive;
+    src: url('./Homemade_Apple/HomemadeApple-Regular.ttf') format("truetype");
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+  font-family: "Zalando Sans Expanded", sans-serif;
+  src: url('./Zalando_Sans_Expanded/ZalandoSansExpanded-VariableFont_wght.ttf') format("truetype");
+}
+
+
+
+/*
+--------------------------------------------Fonts----------------------------------------------
+*/
+
+
+/*
+--------------------------------------------Mobile----------------------------------------------
+*/
+
+.scroll {
+display: none;
+
+}
+
+.mobile_about_screen {
+display: none;
+
+}
+
+.podmobile {
+
+display: none;
+
+}
+
+
+.substackmobile {
+
+display: none;
+
+}
+
+.credit {
+
+display: none;
+
+}
+
+.playgames {
+
+display: none;
+
+}
+
+.landscape_notice {
+
+display: none;
+
+}
+
+/*
+--------------------------------------------Mobile----------------------------------------------
+*/
+
+
+a {
+
+color: #A10606;
+text-decoration: none;
+}
+
+.centralimage {
+width: 99vw;
+text-align: center;
+}
+
+.title {
+width: 333px;
+margin-top: 33vh;
+color: #A10606;
+font-size: 100px;
+font-weight: lighter;
+text-shadow: 0px 0px 48px purple;
+box-shadow: 0px 0px 111px hotpink;
+background-color: oldlace;
+border: 5px double #a10606;
+z-index: 4;
+
+
+}
+
+.ornaments {
+
+
+width: 189px;
+height: 300px;
+margin: auto;
+
+
+}
+
+.eone {
+position: fixed;
+bottom: 17vh;
+left: 8%;
+z-index: 1;
+box-shadow: 2px 2px 4px gray;
+height: 300px;
+width: 189px;
+}
+
+
+
+.etwo {
+position: fixed;
+bottom: 15vh;
+left: 7%;
+z-index: 1;
+transform: rotate(8deg);
+height: 333px; 
+width: 215px;
+}
+
+
+
+.navigation {
+position: fixed;
+top: 1vh;
+left: 7vh;
+font-family: "Homemade Apple", cursive;
+text-underline-offset: 4px;
+}
+
+.nav {
+color: #A10606;
+font-size: 33px;
+font-weight: bold;
+margin-right: 77px;
+text-decoration: underline;
+text-decoration-thickness: 2px;
+text-decoration-style: dashed;
+}
+
+
+.nav:hover {
+
+text-decoration-style: double;
+
+}
+
+.earring {
+position: fixed;
+top: 37%;
+left: 11%;
+z-index: 5;
+transform: rotate(10deg);
+}
+
+.candle {
+position: absolute;
+right: 40.5%;
+top: 7%;
+z-index: 3;
+
+transform: scale(1);
+
+    transition-property: transform;
+
+    transition-duration: 400ms;
+
+    &:hover {
+
+        transform: scale(1.15);
+}
+
+}
+
+
+
+.redheart {
+
+position: fixed;
+right: 33%;
+top: 42%;
+z-index: 0;
+
+}
+
+
+.confessions {
+
+position: fixed;
+font-size: 1.1rem;
+top: 17%;
+left: 2%;
+width: 300px;
+height: 180px;
+border: 5px solid #a10606;
+box-shadow: 2px 2px 5px gray;
+padding: 1%;
+color: #A10606;
+background-color: rgb(251, 250, 227);
+line-height: 110%;
+text-align: justify;
+font-weight: 200;
+text-shadow: 1px 1px #A10606;
+border-radius: 1%;
+}
+
+
+.confess {
+
+background-color: rgb(251, 250, 227);
+border: 1px solid #A10606;
+border-radius: 50%;
+color: #A10606;
+padding: 3px;
+font-weight: bold;
+text-shadow: none;
+font-family: "Homemade Apple", cursive;
+}
+
+.confess:hover {
+border: 2px solid cornsilk;
+}
+
+.reviews_title {
+display: inline;
+background-color: oldlace;
+position: absolute;
+right: 1%;
+line-height: 1.4;
+top: -13%;
+border-radius: 50%;
+padding: 1%;
+border: 1px solid #a10606;
+transform: rotate(6.6deg);
+z-index: 5;
+text-align: center;
+color: rgb(251, 250, 227);
+-webkit-text-stroke: 1px maroon;
+text-shadow: 1px 1px black;
+box-shadow: 2px 2px 5px gray;
+font-weight: bold;
+font-size: 29px;
+}
+
+
+.reviews_screen {
+position: absolute;
+font-size: 20px;
+top: 20%;
+right: 3%;
+width: 26vw;
+height: 55vh;
+margin-left: 0vw;
+margin-top: 0vh;
+color: #A10606;
+background-color: transparent
+overflow: scroll;
+line-height: 110%;
+}
+
+
+.insta {
+background-color: rgb(251, 250, 227);
+position: fixed;
+text-align: center;
+bottom: 13%;
+left: 30%;
+color: maroon;
+padding: 12px;
+font-family: courier;
+font-size: 16px;
+z-index: 5;
+box-shadow: 2px 2px 4px gray;
+border: 0.5px dashed maroon;
+}
+
+.insta:hover {
+border: 2px inset lavenderblush;
+
+
+}
+
+.banner {
+position: fixed;
+left: 0%;
+bottom: 0%;
+color: #a10606;
+font-weight: 200;
+font-size: 44px;
+margin-bottom: 1px;
+
+}
+
+
+/*
+
+----------------------------------------ABOUT PAGE---------------------------------------------
+
+*/
+
+
+
+html.about {
+height: 100%;
+width: 100%;
+cursor: url('./ediaries.cur'), auto;
+background-color: rgb(251, 250, 227);
+}
+
+body.about {
+background-image: url('./assets-ediaries/legalpad2_cream.jpeg');
+height: 98vh;
+margin: 5px auto;
+width: 99vw;
+background-size: contain;
+background-color: oldlace;
+border: 3px dashed #a10606;
+color: black;
+font-family: "Zalando Sans Expanded", sans-serif;
+overflow: hidden;
+cursor: url('./ediaries.cur'), auto;
+}
+
+@keyframes float {
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+
+a {
+
+color: #A10606;
+text-decoration: none;
+}
+
+.dialogue {
+
+width: 60vw;
+height: 60vh;
+margin: 20vh auto;
+background-color: lightgray;
+border: 4px outset;
+box-shadow: 2px 2px 6px gray;
+animation: float 3s ease-in-out infinite;
+
+}
+
+
+
+.titlebar {
+width: 100%;
+height: 5%;
+background-color: midnightblue;
+color: white;
+font-family: monospace;
+padding: 4px;
+font-size: 16px;
+
+
+}
+
+
+.x {
+width: 3.5%;
+height: 5%;
+background-color: red;
+border: 4px outset red;
+text-align: center;
+color: white;
+font-family: courier;
+float: right;
+}
+
+
+
+.contents {
+
+margin: auto;
+height: 95%;
+width: 98%;
+background-color: aliceblue;
+color: indigo;
+padding: 13px;
+font-size: 33px;
+overflow: scroll;
+font-family: courier new;
+}
+
+.lippy {
+
+
+position: fixed;
+top: 20%;
+right: 11%;
+transform: rotate(-5deg);
+z-index: 2;
+}
+
+.lippy:hover {
+
+opacity: 0%;
+}
+
+
+.pen {
+
+position: fixed;
+top: 44%;
+left: 10%;
+z-index: 2;
+}
+
+
+.pen:hover {
+
+opacity: 0%;
+}
+
+.heart {
+
+
+position: fixed;
+bottom: 5%;
+right: 3%;
+z-index: 2;
+}
+
+
+/*
+
+-------------------------------------BLOG + PODCAST PAGE----------------------------------------
+
+*/
+
+html.bp {
+height: 100%;
+width: 100%;
+cursor: url('./ediaries.cur'), auto;
+background-color: lavenderblush;
+}
+
+body.bp {
+background-image: url('./assets-ediaries/legalpad2.jpeg');
+height: 98vh;
+margin: 5px auto;
+width: 99vw;
+background-size: contain;
+background-color: rgb(251, 250, 227);
+border: 3px dashed #a10606;
+color: #a10606;
+font-family: "Zalando Sans Expanded", sans-serif;
+overflow: hidden;
+cursor: url('./ediaries.cur'), auto;
+}
+
+
+a {
+
+color: #a10606;
+text-decoration: none;
+}
+
+.pod {
+
+position: absolute;
+right: 3.5%;
+top: 44.4%;
+
+}
+
+.substack {
+position: absolute;
+top: 44.4%;
+left: 3.5%;
+
+
+}
+
+
+.hearts1 {
+position: fixed;
+left: 27%;
+bottom: 1%;
+
+
+}
+
+.hearts2 {
+position: fixed;
+left: 33%;
+top: -12%;
+
+
+}
+
+
+
+.cta {
+position: fixed;
+left: 10.5%;
+top: 17.5%;
+width: 85%;
+padding: 2%;
+font-size: 33px;
+background-color: aliceblue;
+box-shadow: 4px 4px #a10606;
+border: 1px solid;
+text-align: center;
+transform: rotate(-5deg);
+color: #a10606;
+
+
+}
+
+
+/*
+Colors: 
+burgundy: #a10606
+red: #af0000
+cream: #e4debc
+wine: rgb(75, 37, 53);
+cream paper: rgb(251, 250, 227);
+cool pink paper: rgb(252, 237, 237);
+*/
