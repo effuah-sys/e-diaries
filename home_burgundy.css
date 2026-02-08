@@ -35,17 +35,23 @@ overflow: hidden;
 
 
 @font-face {
-    font-family: "Homemade Apple", cursive;
-    src: url('./Homemade_Apple/HomemadeApple-Regular.ttf') format("truetype");
-    font-weight: normal;
+    font-family: "Homemade Apple";
+    src: 
+      url("./Homemade_Apple/HomemadeApple-Regular.ttf") format("truetype");
     font-style: normal;
+    font-weight: 400;
+    
 
 }
 
 
 @font-face {
-  font-family: "Zalando Sans Expanded", sans-serif;
-  src: url('./Zalando_Sans_Expanded/ZalandoSansExpanded-VariableFont_wght.ttf') format("truetype");
+  font-family: "Zalando Sans Expanded";
+
+  src: 
+    url("./Zalando_Sans_Expanded/ZalandoSansExpanded-VariableFont_wght.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 200 900;
 }
 
 
